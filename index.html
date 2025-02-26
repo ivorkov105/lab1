@@ -4,8 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LAB_1</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <style>
+    #my_form{
+      border: 1px solid #81d4fa;
+      width: 15%;
+      border-radius: 15px;
+      padding: 10px;
+    }
+    #li1{
+      margin-top: 10px;
+    }
+    #li2 {
+      margin-bottom: 10px;
+    }
+      #ol {
+      border: 1px solid #81d4fa;
+      width: 15%;
+      border-radius: 15px;
+    }
+    #my_git {
+      background: linear-gradient(-45deg, #e0f2f1, #e1f5fe);
+      width: 15%;
+      height: 60px;
+      border-radius: 10% 70% 20% 30%;
+    }
+    #post {
+      margin-top: 10px;
+    }
+    #choose_week {
+      margin-top: 10px;
+    }
+    #week {
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+    #anchor {
+      background: linear-gradient(-45deg, #e0f2f1, #e1f5fe);
+      width: 15%;
+      height: 60px;
+      border-radius: 10% 70% 20% 30%;
+    }
+    figure > img {
+      border-radius: 8px;
+      border: 1px solid #81d4fa;
+    }
+    button {
+      border: 1px solid black;
+      border-radius: 4px;
+      background-color: white;
+    }
+    li {
+      width: 80%;
+    }
+    h1 {
+      background: linear-gradient(-45deg, #e0f2f1, #e1f5fe);
+      width: 13%;
+      height: 40px;
+      border-radius: 10% 30% 50% 69%;
+    }
+    h2 {
+      background: linear-gradient(to right, #e0f2f1, #e1f5fe);
+      width: 28%;
+      height: 50px;
+      border-radius: 10% 20% / 40% 30%;
+    }
+    * {
+      font-family: "Segoe UI", system-ui;
+    }
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
@@ -15,18 +80,52 @@
       padding: 4px;
       text-align: center;
     }
+    option[value="1"] {
+      display: none;
+    }
+    br {
+      margin-top: 8px;
+    }
+    span {
+      font-weight: bold;
+      color: #00796b;
+    }
+    hr {
+      border: 1px solid #81d4fa;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    mark {
+      background-color: #00796b;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    time {
+      font-style: italic;
+      color: #00796b;
+    }
+    details {
+      background-color: #e1f5fe;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
   </style>
   <title>ЛАБА 1</title>
 </head>
 <body>
 <!--Список-->
-  <h1>Набор слов</h1>
-    <ol type="A" reversed start="26">
-      <li>yooooo</li>
+  <h1 id="h1">Набор слов</h1>
+    <ol id="ol" type="A" reversed start="26">
+      <li id="li1">yooooo</li>
       <li>поставьте 5 пожалуйста</li>
       <li>вебка это круто</li>
       <li>я эмо(((</li>
-      <li>эшкере</li>
+      <li id="li2">эшкере</li>
     </ol>
   <hr>
 <!--Таблица-->
@@ -46,12 +145,12 @@
         </tr>
       </table>
 <hr>
-<h3>Какая то форма странная хмммм</h3>
+<h2>Какая-то форма странная хмммм</h2>
 <!--formes-->
-<form>
+<form id="my_form">
   <input type="radio" id="get" value="get" name="request"><label for="get">GET</label><br>
   <input type="radio" id="post" value="post" name="request"><label for="post">POST</label><br>
-  <label for="week">Выберите неделю:</label><br>
+  <label id="choose_week" for="week">Выберите неделю:</label><br>
   <select name="week" id="week">
     <option value="1">Неделя, --, ----</option>
     <option value="2">Неделя 1, 01, 2025</option>
@@ -64,7 +163,35 @@
   <br>
   <button type="submit">Отправить</button>
   <button type="reset">Сбросить</button>
-  <hr>
 </form>
+<hr>
+  <p id="my_git">Мой гит:<br>
+    <a href="https://github.com/ivorkov105">https://github.com/ivorkov105</a>
+  </p>
+<div>
+  <a id="anchor" href="#h1">Якорь</a>
+</div>
+<p>Это абзац с текстом. <span>Текст в выделении</span> и <mark>важная информация</mark></p>
+<pre>Вот почему: <div>блоки в лице div</div> - плохие</pre>
+<pre>Пример кода:
+console.log("Hello World!");</pre>
+<time datetime="2025-02-27">27 февраля 2025 года</time>
+<details>
+  <summary>Summary</summary>
+  <p>Текст внутри summary</p>
+</details>
+<hr>
+<figure>
+  <img src="https://repository-images.githubusercontent.com/421504362/a404c819-078e-4bf2-bed8-616fcd9c434d"
+  title="frontenders"
+  alt="frontenders">
+  <figcaption>
+    <pre>
+    Фронтендеры лезут драться (зачем??)
+    ...
+    Ладно не будем им мешать
+  </pre>
+  </figcaption>
+</figure>
 </body>
 </html>
