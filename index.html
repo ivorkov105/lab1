@@ -1,40 +1,70 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS playground</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAB_1</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 4px;
+    }
+    td {
+      padding: 4px;
+      text-align: center;
+    }
+  </style>
+  <title>ЛАБА 1</title>
 </head>
 <body>
-<header class="logo">
-  <a href="https://www.jetbrains.com/webstorm/">
-    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"
-         height="90">
-  </a>
-</header>
-<main id="app">
-  <h1 class="title">
-    Thank you for trying it out. <br /> Your first project is up and running
-    now.
-  </h1>
-  <section class="counter">
-    <div class="counter-info">
-      <p class="counter-text">Counter is</p>
-      <p class="counter-value" id="counter-value"></p>
-    </div>
-    <div class="counter-interaction">
-      <button id="increaseByOne" type="button">+1</button>
-      <button id="increaseByTwo" type="button">+2</button>
-      <button id="decreaseByOne" type="button">-1</button>
-      <button id="decreaseByTwo" type="button">-2</button>
-    </div>
-  </section>
-</main>
-<footer class="technologies">
-  <img src="/technologies.svg" alt="List of supported technologies">
-</footer>
-<script type="module" src="/src/main.js"></script>
+<!--Список-->
+  <h1>Набор слов</h1>
+    <ol type="A" reversed start="26">
+      <li>yooooo</li>
+      <li>поставьте 5 пожалуйста</li>
+      <li>вебка это круто</li>
+      <li>я эмо(((</li>
+      <li>эшкере</li>
+    </ol>
+  <hr>
+<!--Таблица-->
+<table style="width:100%">
+  <caption>Реально таблица</caption>
+        <tr>
+          <th colspan="3">Крутые машинки, которые я хочу</th>
+        </tr>
+        <tr>
+          <td>Toyota</td>
+          <td>Nissan</td>
+          <td  rowspan="2">Honda</td>
+        </tr>
+        <tr>
+          <td>Trueno AE86</td>
+          <td>Skyline R32/34</td>
+        </tr>
+      </table>
+<hr>
+<h3>Какая то форма странная хмммм</h3>
+<!--formes-->
+<form>
+  <input type="radio" id="get" value="get" name="request"><label for="get">GET</label><br>
+  <input type="radio" id="post" value="post" name="request"><label for="post">POST</label><br>
+  <label for="week">Выберите неделю:</label><br>
+  <select name="week" id="week">
+    <option value="1">Неделя, --, ----</option>
+    <option value="2">Неделя 1, 01, 2025</option>
+    <option value="3">Неделя 2, 01, 2025</option>
+    <option value="4">Неделя 3, 01, 2025</option>
+    <option value="5">Неделя 4, 01, 2025</option>
+    <option value="6">Неделя 5, 02, 2025</option>
+    <option value="7">Неделя 6, 02, 2025</option>
+  </select>
+  <br>
+  <button type="submit">Отправить</button>
+  <button type="reset">Сбросить</button>
+  <hr>
+</form>
 </body>
 </html>
